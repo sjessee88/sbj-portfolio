@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spencer's Projects | Vessel Crew Log</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <style>
+    /* Page-specific CSS */
+    .project-header {
+      background-color: #424c21;
+      color: #e1d9c9;
+      padding: 4rem 0 3rem;
+      text-align: center;
+      border-bottom: 3px solid #173125;
+    }
+
+    .project-header h1 {
+      font-family: "Oswald", sans-serif;
+      font-size: 2.5rem;
+    }
+
+    .project-header p {
+          color: #e1d9c9;
+          font-weight: 200;
+        }
+
+    .project-section {
+      background-color: #f2ecdf;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .project-tools li {
+      list-style: none;
+      padding: 4px 0;
+    }
+
+    .project-tools li::before {
+      content: "• ";
+      color: #7f4b30;
+    }
+
+    .project-img {
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #b27d57;
+      max-height: 350px;
+      object-fit: cover;
+    }
+
+    .back-link {
+      color: #7f4b30;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      color: #b27d57;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a id="logoButton" class="navbar-brand logo-text" href="index.html">SBJ</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Header -->
+  <header class="project-header">
+    <div class="container">
+      <h1>VESSEL CREW LOG</h1>
+      <p>A digital solution for managing crew data across more than 100 vessels at American Commercial Barge Line.</p>
+    </div>
+  </header>
+
+  <!-- Project Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="project-section">
+        <h3>Project Overview</h3>
+        <p>
+          The Vessel Crew Log is a custom Power Platform solution that replaced the deprecated crew log software at 
+          <strong>American Commercial Barge Line (ACBL)</strong>. It allows vessel captains and dispatchers to log, review, 
+          and confirm employee assignments in real time using Power Apps, Power Automate, and SharePoint integration.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h3>Tools & Technologies</h3>
+        <ul class="project-tools">
+          <li>Microsoft Power Apps (Canvas App)</li>
+          <li>Power Automate for workflow automation</li>
+          <li>SharePoint Lists for structured data storage</li>
+          <li>Power BI for data visualization</li>
+          <li>UKG Workforce Management API integration</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h3>Screenshots</h3>
+        <div class="col-lg-6">
+          <div>
+            <img src="assets/img/crew-log-screenshot.jpeg" class="img-fluid project-img" alt="Crew Log Power App screenshot">
+          </div>
+          <div>
+            <img src="assets/img/dispatcher-log-screenshot.PNG" class="img-fluid project-img" alt="Crew Log dashboard screenshot">
+          </div>
+        </div>
+      </div>
+
+      <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+    </div>
+  </section>
+</body>
+</html>
