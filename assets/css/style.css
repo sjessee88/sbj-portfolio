@@ -10,7 +10,6 @@ body {
   color: #173125; /* FOREST */
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
-  background-image: radial-gradient(#ffffff30 1px, transparent 1px);
   background-size: 18px 18px;
 }
 
@@ -23,8 +22,6 @@ section {
    NAVBAR
 ---------------------------------- */
 .custom-navbar {
-  background-color: #E1D9C9; /* SAND */
-  border-bottom: 2px solid #424C21; /* MOSS */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
 }
 
