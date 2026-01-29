@@ -1,13 +1,24 @@
 /* ----------------------------------
    GLOBAL
 ---------------------------------- */
+:root {
+  --charcoal: #383838;
+  --white: #FFFFFF;
+  --canvas: #EAE6E0;
+  --mist: #737071;
+  --lunar: #bebdba;
+  --black: #000000;
+  --graphite: #303232;
+  --grid: #636270;
+}
+
 html {
   scroll-padding-top: 80px;
 }
 
 body {
-  background-color: #FBF7EB; /* Lighter SAND */
-  color: #173125; /* FOREST */
+  background-color: var(--charcoal);
+  color: var(--white);
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   background-size: 18px 18px;
@@ -22,16 +33,25 @@ section {
    NAVBAR
 ---------------------------------- */
 .custom-navbar {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
+  background-color: var(--charcoal);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-collapse {
+  padding-right: 2rem;
 }
 
 .nav-link {
-  color: #424C21 !important; /* MOSS */
+  color: var(--white) !important;
   font-weight: 500;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  transform-origin: center;
 }
 
 .nav-link:hover {
-  color: #7F4B30 !important; /* OCHRE */
+  color: var(--lunar) !important;
+  transform: scale(1.1);
 }
 
 
@@ -40,10 +60,10 @@ section {
 ---------------------------------- */
 .logo-text {
   font-family: "Bungee Shade", sans-serif;
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: normal;
   letter-spacing: 1px;
-  color: #424C21; /* MOSS */
+  color: var(--white);
   transition: transform 0.3s ease;
 }
 
@@ -51,17 +71,12 @@ section {
   transform: scale(1.1) rotate(-2deg);
 }
 
-/* When clicked */
-.logo-active {
-  color: #424C21 !important; /* MOSS */
-}
-
 /* Override bootstrap forcing black */
 #logoButton:hover,
 #logoButton:active,
 #logoButton:focus,
 #logoButton:visited {
-  color: #424C21 !important;
+  color: var(--white) !important;
 }
 
 
@@ -70,12 +85,12 @@ section {
 ---------------------------------- */
 #home h1 {
   font-size: 3.2rem;
-  color: #424C21; /* MOSS */
+  color: var(--white);
   font-family: "Oswald", sans-serif;
 }
 
 #home .lead {
-  color: #7F4B30; /* OCHRE */
+  color: var(--lunar);
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
 }
@@ -90,7 +105,7 @@ section {
    BUTTONS
 ---------------------------------- */
 .custom-button {
-  background-color: #7F4B30; /* OCHRE */
+  background-color: var(--graphite);
   color: #fff;
   padding: 0.65rem 1.4rem;
   font-size: 1.1rem;
@@ -102,7 +117,7 @@ section {
 .custom-button:hover,
 .custom-button:active,
 .custom-button.active-btn {
-  background-color: #B27D57; /* COFFEE */
+  background-color: var(--mist);
   color: #fff;
 }
 
@@ -111,8 +126,8 @@ section {
    ABOUT SECTION
 ---------------------------------- */
 #about {
-  background-color: #212E40; /* BASALT */
-  color: #E1D9C9;
+  background-color: var(--grid);
+  color: var(--lunar);
 }
 
 #about p {
@@ -139,9 +154,8 @@ section {
   font-family: "Oswald", sans-serif;
 }
 .custom-card {
-  background-color: #F2ECDF; /* light sand */
-  border: 1px solid #B27D57; /* COFFEE */
-  color: #424C21; /* MOSS */
+  background-color: var(--white);
+  border: 1px solid var(--black);
   border-radius: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -153,18 +167,18 @@ section {
 
 .custom-card .card-img-top {
   height: 200px;
-  object-fit: cover;
+  object-fit: fill;
   filter: brightness(0.95);
 }
 
 .custom-card .card-title {
-  color: #7F4B30; /* OCHRE */
+  color: var(--charcoal);
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
 
 .custom-card .card-text {
-  color: #424C21; /* MOSS */
+  color: var(--mist);
 }
 
 
@@ -174,16 +188,15 @@ section {
 .contact-icon {
   width: 24px;
   height: 24px;
-  filter: invert(29%) sepia(6%) saturate(1458%) hue-rotate(45deg) brightness(90%) contrast(85%);
+  filter: brightness(50%) contrast(80%);
 }
 
 .contact-link {
-  color: #424C21; /* MOSS */
+  color: var(--lunar);
   text-decoration: none;
 }
 
-.contact-link:hover {
-  color: #7F4B30; /* OCHRE */
+.contact-link:hover { 
   text-decoration: underline;
 }
 
@@ -191,7 +204,63 @@ section {
    FOOTER SECTION
 ---------------------------------- */
 footer {
-  background-color: #212E40;
-  color: #E1D9C9;
+  border-top: 1 solid var(--white);
+  background-color: var(--charcoal);
+  color: var(--lunar);
   font-weight: 200;
+}
+
+
+/* ----------------------------------
+   VESSEL CREW LOG PROJECT
+---------------------------------- */
+.project-header {
+      color: var(--white);
+      padding: 4rem 0 0;
+      text-align: center;
+    }
+
+.project-header h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+}
+
+.project-header p {
+      color: var(--lunar);
+      font-weight: 200;
+    }
+
+.project-section {
+  background-color: var(--grid);
+  color: var(--lunar);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-tools li {
+  list-style: none;
+  padding: 4px 0;
+}
+
+.project-tools li::before {
+  content: "• ";
+  color: var(--white);
+}
+
+.project-img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  max-height: 500px;
+  object-fit: fill;
+}
+
+.back-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: var(--mist);
 }
