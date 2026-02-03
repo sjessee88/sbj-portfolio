@@ -2,14 +2,17 @@
    GLOBAL
 ---------------------------------- */
 :root {
-  --charcoal: #383838;
-  --white: #FFFFFF;
-  --canvas: #EAE6E0;
-  --mist: #737071;
-  --lunar: #bebdba;
-  --black: #000000;
-  --graphite: #303232;
-  --grid: #636270;
+  --charcoal: rgb(56, 56, 56);
+  --charcoal-rgb: 56, 56, 56;
+  --white: rgb(255, 255, 255);
+  --white-rgb: 255, 255, 255;
+  --canvas: rgb(234, 230, 224);
+  --canvas-rgb: 234, 230, 224;
+  --mist: rgb(115, 112, 113);
+  --lunar: rgb(190, 189, 186);
+  --black: rgb(0, 0, 0);
+  --graphite: rgb(48, 50, 50);
+  --grid: rgb(99, 98, 112);
 }
 
 html {
@@ -115,8 +118,7 @@ section {
 }
 
 .custom-button:hover,
-.custom-button:active,
-.custom-button.active-btn {
+.custom-button:active {
   background-color: var(--mist);
   color: #fff;
 }
@@ -215,10 +217,10 @@ footer {
    VESSEL CREW LOG PROJECT
 ---------------------------------- */
 .project-header {
-      color: var(--white);
-      padding: 4rem 0 0;
-      text-align: center;
-    }
+  color: var(--white);
+  padding: 4rem 0 0;
+  text-align: center;
+}
 
 .project-header h1 {
   font-family: "Oswald", sans-serif;
@@ -226,9 +228,9 @@ footer {
 }
 
 .project-header p {
-      color: var(--lunar);
-      font-weight: 200;
-    }
+  color: var(--lunar);
+  font-weight: 200;
+  }
 
 .project-section {
   background-color: var(--grid);
@@ -253,7 +255,7 @@ footer {
   margin-bottom: 1rem;
   max-height: 500px;
   object-fit: fill;
-}
+} 
 
 .back-link {
   color: var(--white);
@@ -263,4 +265,20 @@ footer {
 
 .back-link:hover {
   color: var(--mist);
+}
+
+.toast {
+  width: 300px;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  background-color: rgba(var(--white-rgb), 0.5);
+  color: var(--charcoal);
+  border: 0;
+  box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.toast-button {
+  background-color: var(--charcoal);
+  color: var(--white);
 }
