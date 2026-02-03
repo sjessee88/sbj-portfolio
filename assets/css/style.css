@@ -32,6 +32,7 @@ section {
   padding-bottom: 5rem;
 }
 
+
 /* ----------------------------------
    NAVBAR
 ---------------------------------- */
@@ -202,6 +203,7 @@ section {
   text-decoration: underline;
 }
 
+
 /* ----------------------------------
    FOOTER SECTION
 ---------------------------------- */
@@ -210,6 +212,25 @@ footer {
   background-color: var(--charcoal);
   color: var(--lunar);
   font-weight: 200;
+}
+
+
+/*----------------------------------
+    CERT TOAST
+----------------------------------*/
+.toast {
+  width: 300px;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  background-color: rgba(var(--white-rgb), 0.5);
+  color: var(--charcoal);
+  border: 0;
+  box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toast-button {
+  background-color: var(--charcoal);
+  color: var(--white);
 }
 
 
@@ -265,20 +286,4 @@ footer {
 
 .back-link:hover {
   color: var(--mist);
-}
-
-.toast {
-  width: 300px;
-  font-size: 1rem;
-  font-family: "Oswald", sans-serif;
-  background-color: rgba(var(--white-rgb), 0.5);
-  color: var(--charcoal);
-  border: 0;
-  box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.2);
-
-}
-
-.toast-button {
-  background-color: var(--charcoal);
-  color: var(--white);
 }
